@@ -1,0 +1,1739 @@
+{
+  "agent": "agent1_5_process_graph",
+  "source": "artifacts\\inference\\agent1_work_units.json",
+  "params": {
+    "partial_retain": 0.3,
+    "ai_lane": "AI Agent"
+  },
+  "lane_order": [
+    "TCB business team",
+    "system",
+    "ECN",
+    "inspector",
+    "evaluator",
+    "evaluation support team",
+    "evaluation team",
+    "reviewer",
+    "evaluation team leader"
+  ],
+  "as_is": {
+    "nodes": [
+      {
+        "id": "w1",
+        "name": "File evaluation request",
+        "lane": "TCB business team",
+        "type": "start",
+        "grade": "full",
+        "rationale": "This task involves straightforward data entry that can be fully automated."
+      },
+      {
+        "id": "w2",
+        "name": "Check applicant company's basic information",
+        "lane": "TCB business team",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires human judgment to verify the accuracy of the information."
+      },
+      {
+        "id": "w3",
+        "name": "Email upload link for document submission",
+        "lane": "TCB business team",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task involves sending a standard email which can be automated."
+      },
+      {
+        "id": "w4",
+        "name": "Collect financial statements and documents",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves data scraping."
+      },
+      {
+        "id": "w5",
+        "name": "Upload company profile and product catalog",
+        "lane": "TCB business team",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires manual input and cannot be automated."
+      },
+      {
+        "id": "w6",
+        "name": "Fill in technology summary sheet",
+        "lane": "TCB business team",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task can be partially automated, but requires human input for completion."
+      },
+      {
+        "id": "w7",
+        "name": "Assign on-site or phone inspector",
+        "lane": "ECN",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task involves decision-making based on criteria that can be partially automated."
+      },
+      {
+        "id": "w8",
+        "name": "Collect missing documents",
+        "lane": "inspector",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires physical presence and human interaction."
+      },
+      {
+        "id": "w9",
+        "name": "Write and upload inspection report",
+        "lane": "inspector",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task can be partially automated, but requires human judgment for writing."
+      },
+      {
+        "id": "w10",
+        "name": "Assign evaluator",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves random assignment."
+      },
+      {
+        "id": "w11",
+        "name": "Check application information and documents",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to assess completeness."
+      },
+      {
+        "id": "w12",
+        "name": "Issue supplementary request",
+        "lane": "evaluator",
+        "type": "decision",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine what is missing."
+      },
+      {
+        "id": "w13",
+        "name": "Start investigation after consent",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires human judgment and ethical considerations."
+      },
+      {
+        "id": "w14",
+        "name": "Enter company profile",
+        "lane": "evaluation support team",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task involves data entry that can be fully automated."
+      },
+      {
+        "id": "w15",
+        "name": "Confirm company profile",
+        "lane": "evaluation team",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to verify the accuracy of the profile."
+      },
+      {
+        "id": "w16",
+        "name": "Pull data from corporate registry",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves data retrieval."
+      },
+      {
+        "id": "w17",
+        "name": "Check previous technology grade",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires human judgment to interpret the grade."
+      },
+      {
+        "id": "w18",
+        "name": "Assess quality of inspection materials",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to evaluate quality."
+      },
+      {
+        "id": "w19",
+        "name": "Request re-inspection",
+        "lane": "evaluator",
+        "type": "decision",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine adequacy."
+      },
+      {
+        "id": "w20",
+        "name": "Carry over company information",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves data transfer."
+      },
+      {
+        "id": "w21",
+        "name": "Confirm technology-evaluation target industry",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to confirm the industry."
+      },
+      {
+        "id": "w22",
+        "name": "Search and select industrial-technology classification",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to select the appropriate classification."
+      },
+      {
+        "id": "w23",
+        "name": "Choose new-growth items and climate-technology classification",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to make selections."
+      },
+      {
+        "id": "w24",
+        "name": "Update financial information manually",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires manual input and cannot be automated."
+      },
+      {
+        "id": "w25",
+        "name": "Write up main business areas and products",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to articulate the business areas."
+      },
+      {
+        "id": "w26",
+        "name": "Pull representative patents from KIPRIS",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves data scraping."
+      },
+      {
+        "id": "w27",
+        "name": "Select patents and read published full text",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to interpret the patent details."
+      },
+      {
+        "id": "w28",
+        "name": "Enter supporting basis for patents",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine the supporting basis."
+      },
+      {
+        "id": "w29",
+        "name": "Generate draft technology-evaluation opinion",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves generating text based on input."
+      },
+      {
+        "id": "w30",
+        "name": "Check on-site technology inspection items",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to evaluate the items."
+      },
+      {
+        "id": "w31",
+        "name": "Produce rule-based score",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves a straightforward calculation."
+      },
+      {
+        "id": "w32",
+        "name": "Auto-generate opinions via guidance",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves generating text based on rules."
+      },
+      {
+        "id": "w33",
+        "name": "Judge and select inspection items",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to make selections."
+      },
+      {
+        "id": "w34",
+        "name": "Save evaluation results",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task involves data entry that can be fully automated."
+      },
+      {
+        "id": "w35",
+        "name": "Generate technology opinion",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves generating text based on input."
+      },
+      {
+        "id": "w36",
+        "name": "Review and edit technology opinion",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to review and edit the generated text."
+      },
+      {
+        "id": "w37",
+        "name": "Copy-paste market opinion",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task involves some automation but requires human judgment for finalization."
+      },
+      {
+        "id": "w38",
+        "name": "Confirm and write summary and detailed opinions",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to articulate the opinions."
+      },
+      {
+        "id": "w39",
+        "name": "Confirm comprehensive evaluation grade",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine the grade."
+      },
+      {
+        "id": "w40",
+        "name": "Auto-generate comprehensive opinion",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves generating text based on input."
+      },
+      {
+        "id": "w41",
+        "name": "Request review of report",
+        "lane": "evaluator",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine when to request a review."
+      },
+      {
+        "id": "w42",
+        "name": "Assign reviewer",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves random assignment."
+      },
+      {
+        "id": "w43",
+        "name": "Perform error and rule-based checks",
+        "lane": "system",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves systematic checks."
+      },
+      {
+        "id": "w44",
+        "name": "Check qualitative items",
+        "lane": "reviewer",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to evaluate qualitative aspects."
+      },
+      {
+        "id": "w45",
+        "name": "Final approval of report",
+        "lane": "evaluation team leader",
+        "type": "end",
+        "grade": "manual",
+        "rationale": "This task requires human judgment and authority for approval."
+      },
+      {
+        "id": "w46",
+        "name": "Dispatch report",
+        "lane": "evaluation team leader",
+        "type": "end",
+        "grade": "manual",
+        "rationale": "This task requires human action to send the report."
+      }
+    ],
+    "edges": [
+      {
+        "from": "w1",
+        "to": "w2",
+        "label": ""
+      },
+      {
+        "from": "w2",
+        "to": "w3",
+        "label": ""
+      },
+      {
+        "from": "w3",
+        "to": "w4",
+        "label": ""
+      },
+      {
+        "from": "w4",
+        "to": "w5",
+        "label": ""
+      },
+      {
+        "from": "w5",
+        "to": "w6",
+        "label": ""
+      },
+      {
+        "from": "w6",
+        "to": "w7",
+        "label": ""
+      },
+      {
+        "from": "w7",
+        "to": "w8",
+        "label": ""
+      },
+      {
+        "from": "w8",
+        "to": "w9",
+        "label": ""
+      },
+      {
+        "from": "w9",
+        "to": "w10",
+        "label": ""
+      },
+      {
+        "from": "w10",
+        "to": "w11",
+        "label": ""
+      },
+      {
+        "from": "w11",
+        "to": "w12",
+        "label": ""
+      },
+      {
+        "from": "w12",
+        "to": "w13",
+        "label": "yes"
+      },
+      {
+        "from": "w12",
+        "to": "w20",
+        "label": "no"
+      },
+      {
+        "from": "w13",
+        "to": "w14",
+        "label": ""
+      },
+      {
+        "from": "w14",
+        "to": "w15",
+        "label": ""
+      },
+      {
+        "from": "w15",
+        "to": "w16",
+        "label": ""
+      },
+      {
+        "from": "w16",
+        "to": "w17",
+        "label": ""
+      },
+      {
+        "from": "w17",
+        "to": "w18",
+        "label": ""
+      },
+      {
+        "from": "w18",
+        "to": "w19",
+        "label": ""
+      },
+      {
+        "from": "w19",
+        "to": "w20",
+        "label": "yes"
+      },
+      {
+        "from": "w19",
+        "to": "w21",
+        "label": "no"
+      },
+      {
+        "from": "w20",
+        "to": "w21",
+        "label": ""
+      },
+      {
+        "from": "w21",
+        "to": "w22",
+        "label": ""
+      },
+      {
+        "from": "w22",
+        "to": "w23",
+        "label": ""
+      },
+      {
+        "from": "w23",
+        "to": "w24",
+        "label": ""
+      },
+      {
+        "from": "w24",
+        "to": "w25",
+        "label": ""
+      },
+      {
+        "from": "w25",
+        "to": "w26",
+        "label": ""
+      },
+      {
+        "from": "w26",
+        "to": "w27",
+        "label": ""
+      },
+      {
+        "from": "w27",
+        "to": "w28",
+        "label": ""
+      },
+      {
+        "from": "w28",
+        "to": "w29",
+        "label": ""
+      },
+      {
+        "from": "w29",
+        "to": "w30",
+        "label": ""
+      },
+      {
+        "from": "w30",
+        "to": "w31",
+        "label": ""
+      },
+      {
+        "from": "w31",
+        "to": "w32",
+        "label": ""
+      },
+      {
+        "from": "w32",
+        "to": "w33",
+        "label": ""
+      },
+      {
+        "from": "w33",
+        "to": "w34",
+        "label": ""
+      },
+      {
+        "from": "w34",
+        "to": "w35",
+        "label": ""
+      },
+      {
+        "from": "w35",
+        "to": "w36",
+        "label": ""
+      },
+      {
+        "from": "w36",
+        "to": "w37",
+        "label": ""
+      },
+      {
+        "from": "w37",
+        "to": "w38",
+        "label": ""
+      },
+      {
+        "from": "w38",
+        "to": "w39",
+        "label": ""
+      },
+      {
+        "from": "w39",
+        "to": "w40",
+        "label": ""
+      },
+      {
+        "from": "w40",
+        "to": "w41",
+        "label": ""
+      },
+      {
+        "from": "w41",
+        "to": "w42",
+        "label": ""
+      },
+      {
+        "from": "w42",
+        "to": "w43",
+        "label": ""
+      },
+      {
+        "from": "w43",
+        "to": "w44",
+        "label": ""
+      },
+      {
+        "from": "w44",
+        "to": "w45",
+        "label": ""
+      },
+      {
+        "from": "w45",
+        "to": "w46",
+        "label": ""
+      }
+    ]
+  },
+  "to_be": {
+    "nodes": [
+      {
+        "src_id": "w1",
+        "name": "File evaluation request",
+        "type": "start",
+        "grade": "full",
+        "rationale": "This task involves straightforward data entry that can be fully automated.",
+        "id": "w1_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w2",
+        "name": "Check applicant company's basic information",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires human judgment to verify the accuracy of the information.",
+        "id": "w2_m",
+        "lane": "TCB business team",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      },
+      {
+        "src_id": "w3",
+        "name": "Email upload link for document submission",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task involves sending a standard email which can be automated.",
+        "id": "w3_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w4",
+        "name": "Collect financial statements and documents",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves data scraping.",
+        "id": "w4_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w5",
+        "name": "Upload company profile and product catalog",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires manual input and cannot be automated.",
+        "id": "w5_m",
+        "lane": "TCB business team",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      },
+      {
+        "src_id": "w6",
+        "name": "Fill in technology summary sheet (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task can be partially automated, but requires human input for completion.",
+        "id": "w6_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w6",
+        "name": "Fill in technology summary sheet (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task can be partially automated, but requires human input for completion.",
+        "id": "w6_review",
+        "lane": "TCB business team",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w7",
+        "name": "Assign on-site or phone inspector (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task involves decision-making based on criteria that can be partially automated.",
+        "id": "w7_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w7",
+        "name": "Assign on-site or phone inspector (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task involves decision-making based on criteria that can be partially automated.",
+        "id": "w7_review",
+        "lane": "ECN",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w8",
+        "name": "Collect missing documents",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires physical presence and human interaction.",
+        "id": "w8_m",
+        "lane": "inspector",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      },
+      {
+        "src_id": "w9",
+        "name": "Write and upload inspection report (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task can be partially automated, but requires human judgment for writing.",
+        "id": "w9_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w9",
+        "name": "Write and upload inspection report (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task can be partially automated, but requires human judgment for writing.",
+        "id": "w9_review",
+        "lane": "inspector",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w10",
+        "name": "Assign evaluator",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves random assignment.",
+        "id": "w10_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w11",
+        "name": "Check application information and documents (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to assess completeness.",
+        "id": "w11_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w11",
+        "name": "Check application information and documents (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to assess completeness.",
+        "id": "w11_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w12",
+        "name": "Issue supplementary request (AI draft)",
+        "type": "decision",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine what is missing.",
+        "id": "w12_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w12",
+        "name": "Issue supplementary request (human review)",
+        "type": "decision",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine what is missing.",
+        "id": "w12_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w13",
+        "name": "Start investigation after consent",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires human judgment and ethical considerations.",
+        "id": "w13_m",
+        "lane": "evaluator",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      },
+      {
+        "src_id": "w14",
+        "name": "Enter company profile",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task involves data entry that can be fully automated.",
+        "id": "w14_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w15",
+        "name": "Confirm company profile (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to verify the accuracy of the profile.",
+        "id": "w15_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w15",
+        "name": "Confirm company profile (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to verify the accuracy of the profile.",
+        "id": "w15_review",
+        "lane": "evaluation team",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w16",
+        "name": "Pull data from corporate registry",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves data retrieval.",
+        "id": "w16_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w17",
+        "name": "Check previous technology grade",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires human judgment to interpret the grade.",
+        "id": "w17_m",
+        "lane": "evaluator",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      },
+      {
+        "src_id": "w18",
+        "name": "Assess quality of inspection materials (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to evaluate quality.",
+        "id": "w18_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w18",
+        "name": "Assess quality of inspection materials (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to evaluate quality.",
+        "id": "w18_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w19",
+        "name": "Request re-inspection (AI draft)",
+        "type": "decision",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine adequacy.",
+        "id": "w19_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w19",
+        "name": "Request re-inspection (human review)",
+        "type": "decision",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine adequacy.",
+        "id": "w19_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w20",
+        "name": "Carry over company information",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves data transfer.",
+        "id": "w20_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w21",
+        "name": "Confirm technology-evaluation target industry (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to confirm the industry.",
+        "id": "w21_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w21",
+        "name": "Confirm technology-evaluation target industry (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to confirm the industry.",
+        "id": "w21_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w22",
+        "name": "Search and select industrial-technology classification (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to select the appropriate classification.",
+        "id": "w22_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w22",
+        "name": "Search and select industrial-technology classification (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to select the appropriate classification.",
+        "id": "w22_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w23",
+        "name": "Choose new-growth items and climate-technology classification (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to make selections.",
+        "id": "w23_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w23",
+        "name": "Choose new-growth items and climate-technology classification (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to make selections.",
+        "id": "w23_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w24",
+        "name": "Update financial information manually",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires manual input and cannot be automated.",
+        "id": "w24_m",
+        "lane": "evaluator",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      },
+      {
+        "src_id": "w25",
+        "name": "Write up main business areas and products (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to articulate the business areas.",
+        "id": "w25_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w25",
+        "name": "Write up main business areas and products (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to articulate the business areas.",
+        "id": "w25_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w26",
+        "name": "Pull representative patents from KIPRIS",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves data scraping.",
+        "id": "w26_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w27",
+        "name": "Select patents and read published full text (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to interpret the patent details.",
+        "id": "w27_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w27",
+        "name": "Select patents and read published full text (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to interpret the patent details.",
+        "id": "w27_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w28",
+        "name": "Enter supporting basis for patents (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine the supporting basis.",
+        "id": "w28_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w28",
+        "name": "Enter supporting basis for patents (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine the supporting basis.",
+        "id": "w28_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w29",
+        "name": "Generate draft technology-evaluation opinion",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves generating text based on input.",
+        "id": "w29_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w30",
+        "name": "Check on-site technology inspection items (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to evaluate the items.",
+        "id": "w30_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w30",
+        "name": "Check on-site technology inspection items (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to evaluate the items.",
+        "id": "w30_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w31",
+        "name": "Produce rule-based score",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves a straightforward calculation.",
+        "id": "w31_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w32",
+        "name": "Auto-generate opinions via guidance",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves generating text based on rules.",
+        "id": "w32_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w33",
+        "name": "Judge and select inspection items (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to make selections.",
+        "id": "w33_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w33",
+        "name": "Judge and select inspection items (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to make selections.",
+        "id": "w33_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w34",
+        "name": "Save evaluation results",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task involves data entry that can be fully automated.",
+        "id": "w34_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w35",
+        "name": "Generate technology opinion",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves generating text based on input.",
+        "id": "w35_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w36",
+        "name": "Review and edit technology opinion (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to review and edit the generated text.",
+        "id": "w36_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w36",
+        "name": "Review and edit technology opinion (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to review and edit the generated text.",
+        "id": "w36_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w37",
+        "name": "Copy-paste market opinion (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task involves some automation but requires human judgment for finalization.",
+        "id": "w37_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w37",
+        "name": "Copy-paste market opinion (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task involves some automation but requires human judgment for finalization.",
+        "id": "w37_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w38",
+        "name": "Confirm and write summary and detailed opinions (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to articulate the opinions.",
+        "id": "w38_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w38",
+        "name": "Confirm and write summary and detailed opinions (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to articulate the opinions.",
+        "id": "w38_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w39",
+        "name": "Confirm comprehensive evaluation grade (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine the grade.",
+        "id": "w39_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w39",
+        "name": "Confirm comprehensive evaluation grade (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine the grade.",
+        "id": "w39_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w40",
+        "name": "Auto-generate comprehensive opinion",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves generating text based on input.",
+        "id": "w40_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w41",
+        "name": "Request review of report (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine when to request a review.",
+        "id": "w41_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w41",
+        "name": "Request review of report (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to determine when to request a review.",
+        "id": "w41_review",
+        "lane": "evaluator",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w42",
+        "name": "Assign reviewer",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves random assignment.",
+        "id": "w42_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w43",
+        "name": "Perform error and rule-based checks",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves systematic checks.",
+        "id": "w43_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w44",
+        "name": "Check qualitative items (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to evaluate qualitative aspects.",
+        "id": "w44_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w44",
+        "name": "Check qualitative items (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "This task requires human judgment to evaluate qualitative aspects.",
+        "id": "w44_review",
+        "lane": "reviewer",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w45",
+        "name": "Final approval of report",
+        "type": "end",
+        "grade": "manual",
+        "rationale": "This task requires human judgment and authority for approval.",
+        "id": "w45_m",
+        "lane": "evaluation team leader",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      },
+      {
+        "src_id": "w46",
+        "name": "Dispatch report",
+        "type": "end",
+        "grade": "manual",
+        "rationale": "This task requires human action to send the report.",
+        "id": "w46_m",
+        "lane": "evaluation team leader",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      }
+    ],
+    "edges": [
+      {
+        "from": "w1_ai",
+        "to": "w2_m",
+        "label": ""
+      },
+      {
+        "from": "w2_m",
+        "to": "w3_ai",
+        "label": ""
+      },
+      {
+        "from": "w3_ai",
+        "to": "w4_ai",
+        "label": ""
+      },
+      {
+        "from": "w4_ai",
+        "to": "w5_m",
+        "label": ""
+      },
+      {
+        "from": "w5_m",
+        "to": "w6_ai",
+        "label": ""
+      },
+      {
+        "from": "w6_review",
+        "to": "w7_ai",
+        "label": ""
+      },
+      {
+        "from": "w7_review",
+        "to": "w8_m",
+        "label": ""
+      },
+      {
+        "from": "w8_m",
+        "to": "w9_ai",
+        "label": ""
+      },
+      {
+        "from": "w9_review",
+        "to": "w10_ai",
+        "label": ""
+      },
+      {
+        "from": "w10_ai",
+        "to": "w11_ai",
+        "label": ""
+      },
+      {
+        "from": "w11_review",
+        "to": "w12_ai",
+        "label": ""
+      },
+      {
+        "from": "w12_review",
+        "to": "w13_m",
+        "label": "yes"
+      },
+      {
+        "from": "w12_review",
+        "to": "w20_ai",
+        "label": "no"
+      },
+      {
+        "from": "w13_m",
+        "to": "w14_ai",
+        "label": ""
+      },
+      {
+        "from": "w14_ai",
+        "to": "w15_ai",
+        "label": ""
+      },
+      {
+        "from": "w15_review",
+        "to": "w16_ai",
+        "label": ""
+      },
+      {
+        "from": "w16_ai",
+        "to": "w17_m",
+        "label": ""
+      },
+      {
+        "from": "w17_m",
+        "to": "w18_ai",
+        "label": ""
+      },
+      {
+        "from": "w18_review",
+        "to": "w19_ai",
+        "label": ""
+      },
+      {
+        "from": "w19_review",
+        "to": "w20_ai",
+        "label": "yes"
+      },
+      {
+        "from": "w19_review",
+        "to": "w21_ai",
+        "label": "no"
+      },
+      {
+        "from": "w20_ai",
+        "to": "w21_ai",
+        "label": ""
+      },
+      {
+        "from": "w21_review",
+        "to": "w22_ai",
+        "label": ""
+      },
+      {
+        "from": "w22_review",
+        "to": "w23_ai",
+        "label": ""
+      },
+      {
+        "from": "w23_review",
+        "to": "w24_m",
+        "label": ""
+      },
+      {
+        "from": "w24_m",
+        "to": "w25_ai",
+        "label": ""
+      },
+      {
+        "from": "w25_review",
+        "to": "w26_ai",
+        "label": ""
+      },
+      {
+        "from": "w26_ai",
+        "to": "w27_ai",
+        "label": ""
+      },
+      {
+        "from": "w27_review",
+        "to": "w28_ai",
+        "label": ""
+      },
+      {
+        "from": "w28_review",
+        "to": "w29_ai",
+        "label": ""
+      },
+      {
+        "from": "w29_ai",
+        "to": "w30_ai",
+        "label": ""
+      },
+      {
+        "from": "w30_review",
+        "to": "w31_ai",
+        "label": ""
+      },
+      {
+        "from": "w31_ai",
+        "to": "w32_ai",
+        "label": ""
+      },
+      {
+        "from": "w32_ai",
+        "to": "w33_ai",
+        "label": ""
+      },
+      {
+        "from": "w33_review",
+        "to": "w34_ai",
+        "label": ""
+      },
+      {
+        "from": "w34_ai",
+        "to": "w35_ai",
+        "label": ""
+      },
+      {
+        "from": "w35_ai",
+        "to": "w36_ai",
+        "label": ""
+      },
+      {
+        "from": "w36_review",
+        "to": "w37_ai",
+        "label": ""
+      },
+      {
+        "from": "w37_review",
+        "to": "w38_ai",
+        "label": ""
+      },
+      {
+        "from": "w38_review",
+        "to": "w39_ai",
+        "label": ""
+      },
+      {
+        "from": "w39_review",
+        "to": "w40_ai",
+        "label": ""
+      },
+      {
+        "from": "w40_ai",
+        "to": "w41_ai",
+        "label": ""
+      },
+      {
+        "from": "w41_review",
+        "to": "w42_ai",
+        "label": ""
+      },
+      {
+        "from": "w42_ai",
+        "to": "w43_ai",
+        "label": ""
+      },
+      {
+        "from": "w43_ai",
+        "to": "w44_ai",
+        "label": ""
+      },
+      {
+        "from": "w44_review",
+        "to": "w45_m",
+        "label": ""
+      },
+      {
+        "from": "w45_m",
+        "to": "w46_m",
+        "label": ""
+      },
+      {
+        "from": "w6_ai",
+        "to": "w6_review",
+        "label": ""
+      },
+      {
+        "from": "w7_ai",
+        "to": "w7_review",
+        "label": ""
+      },
+      {
+        "from": "w9_ai",
+        "to": "w9_review",
+        "label": ""
+      },
+      {
+        "from": "w11_ai",
+        "to": "w11_review",
+        "label": ""
+      },
+      {
+        "from": "w12_ai",
+        "to": "w12_review",
+        "label": ""
+      },
+      {
+        "from": "w15_ai",
+        "to": "w15_review",
+        "label": ""
+      },
+      {
+        "from": "w18_ai",
+        "to": "w18_review",
+        "label": ""
+      },
+      {
+        "from": "w19_ai",
+        "to": "w19_review",
+        "label": ""
+      },
+      {
+        "from": "w21_ai",
+        "to": "w21_review",
+        "label": ""
+      },
+      {
+        "from": "w22_ai",
+        "to": "w22_review",
+        "label": ""
+      },
+      {
+        "from": "w23_ai",
+        "to": "w23_review",
+        "label": ""
+      },
+      {
+        "from": "w25_ai",
+        "to": "w25_review",
+        "label": ""
+      },
+      {
+        "from": "w27_ai",
+        "to": "w27_review",
+        "label": ""
+      },
+      {
+        "from": "w28_ai",
+        "to": "w28_review",
+        "label": ""
+      },
+      {
+        "from": "w30_ai",
+        "to": "w30_review",
+        "label": ""
+      },
+      {
+        "from": "w33_ai",
+        "to": "w33_review",
+        "label": ""
+      },
+      {
+        "from": "w36_ai",
+        "to": "w36_review",
+        "label": ""
+      },
+      {
+        "from": "w37_ai",
+        "to": "w37_review",
+        "label": ""
+      },
+      {
+        "from": "w38_ai",
+        "to": "w38_review",
+        "label": ""
+      },
+      {
+        "from": "w39_ai",
+        "to": "w39_review",
+        "label": ""
+      },
+      {
+        "from": "w41_ai",
+        "to": "w41_review",
+        "label": ""
+      },
+      {
+        "from": "w44_ai",
+        "to": "w44_review",
+        "label": ""
+      }
+    ]
+  },
+  "counts": {
+    "asis_total": 46,
+    "asis_human": 35,
+    "tobe_total": 68,
+    "tobe_human": 30,
+    "node_count_reduction_pct": 14.3,
+    "fully_eliminated_human": 5,
+    "partially_reduced_human": 22,
+    "effort_reduction_pct": 51.9,
+    "asis_human_minutes_per_month": 41050.0,
+    "tobe_human_minutes_per_month": 19755.0
+  }
+}

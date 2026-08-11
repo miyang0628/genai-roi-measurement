@@ -1,0 +1,10 @@
+[Interview — Corporate Legal, Contract Review]
+Q. Walk me through a contract review.
+A. A paralegal intakes the counterparty's draft and logs it in the matter
+system. An associate reads each clause and compares it against our standard
+playbook, flagging deviations on indemnity, liability caps, and termination.
+For non-standard clauses the associate drafts proposed redlines. A partner
+reviews high-risk clauses and signs off. The negotiated changes are emailed to
+the counterparty, and the final executed copy is filed in the document
+repository. Tracking key dates like renewal and expiry is done manually in a
+spreadsheet.

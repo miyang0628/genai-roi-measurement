@@ -1,0 +1,31 @@
+{
+  "version_hash": "a3655d5c0c37da73",
+  "captured_at_utc": "2026-08-11T02:49:51.824895+00:00",
+  "assumptions": {
+    "cost_model": {
+      "hourly_wage_usd": 35.0,
+      "capex_usd": 60000.0,
+      "opex_usd_per_year": 12000.0,
+      "automation_ratio": {
+        "full": 0.9,
+        "partial": 0.5,
+        "manual": 0.0
+      },
+      "currency": "USD"
+    },
+    "shape_prior_min": {
+      "start": 3.0,
+      "task": 15.0,
+      "decision": 8.0,
+      "end": 5.0
+    },
+    "default_cases_per_month": 20.0,
+    "qualitative_weight": {
+      "most_time_consuming": 4.0,
+      "repeated_effort": 2.0,
+      "manual_data_entry": 2.0,
+      "normal": 1.0
+    },
+    "partial_retain": 0.3
+  }
+}

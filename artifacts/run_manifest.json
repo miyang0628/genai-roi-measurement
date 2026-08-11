@@ -1,0 +1,66 @@
+{
+  "seed": 42,
+  "root": "C:\\Users\\User\\Downloads\\학술\\36_ROI_에이전트",
+  "paths": {
+    "interview": "data\\raw\\interview_tcb.txt",
+    "ground_truth": "data\\raw\\ground_truth_tcb.json",
+    "inference_dir": "artifacts\\inference",
+    "tables_dir": "artifacts\\tables",
+    "cache_dir": "artifacts\\llm_cache"
+  },
+  "models": {
+    "weak": {
+      "name": "gpt-4o-mini",
+      "in": 0.15,
+      "cached_in": 0.075,
+      "out": 0.6
+    },
+    "mid": {
+      "name": "gpt-5.4-mini",
+      "in": 0.75,
+      "cached_in": 0.075,
+      "out": 4.5
+    },
+    "strong": {
+      "name": "gpt-5.4",
+      "in": null,
+      "cached_in": null,
+      "out": null
+    }
+  },
+  "default_tier": "weak",
+  "cost_model": {
+    "hourly_wage_usd": 35.0,
+    "capex_usd": 60000.0,
+    "opex_usd_per_year": 12000.0,
+    "automation_ratio": {
+      "full": 0.9,
+      "partial": 0.5,
+      "manual": 0.0
+    },
+    "currency": "USD"
+  },
+  "pipeline_cfg": {
+    "agent1_extract": {
+      "tier": "weak",
+      "temperature": 0.0,
+      "n_samples": 1
+    },
+    "agent2_time": {
+      "tier": "weak",
+      "temperature": 0.7,
+      "n_samples": 5
+    },
+    "agent3_roi": {
+      "tier": "weak",
+      "temperature": 0.0,
+      "n_samples": 1
+    }
+  },
+  "auto_grades": {
+    "full": "Fully automatable end-to-end by a generative-AI agent.",
+    "partial": "Partially automatable (AI drafts, human reviews/edits).",
+    "manual": "Must remain manual (judgment, physical, or non-digitizable)."
+  },
+  "missing_sentinel": "[MISSING]"
+}

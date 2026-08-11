@@ -1,0 +1,4 @@
+﻿domain,work_units,full,partial,manual,%automatable(full+partial)
+hospital_billing,6,2,3,1,83.3
+law_contract_review,7,2,3,2,71.4
+manufacturing_settlement,7,2,4,1,85.7

@@ -1,0 +1,47 @@
+﻿unit_id,task,actor,system,grade,grade_rationale,time_source,time_confidence,minutes_per_case,reliability_cv,missing_fields
+w1,File evaluation request,TCB business team,bank terminal or integrated platform,full,This task involves straightforward data entry that can be fully automated.,prior,0.3,5.0,0.387,
+w2,Check applicant company's basic information,TCB business team,[MISSING],manual,This task requires human judgment to verify the accuracy of the information.,prior,0.38,10.0,0.396,system
+w3,Email upload link for document submission,TCB business team,integrated platform,full,This task involves sending a standard email which can be automated.,prior,0.3,2.0,0.204,
+w4,Collect financial statements and documents,system,[MISSING],full,This task can be fully automated as it involves data scraping.,prior,0.3,5.0,0.0,system
+w5,Upload company profile and product catalog,TCB business team,[MISSING],manual,This task requires manual input and cannot be automated.,implied,0.5,15.0,0.333,system
+w6,Fill in technology summary sheet,TCB business team,integrated platform,partial,"This task can be partially automated, but requires human input for completion.",implied,0.5,5.0,0.416,
+w7,Assign on-site or phone inspector,ECN,[MISSING],partial,This task involves decision-making based on criteria that can be partially automated.,prior,0.3,3.0,0.399,system
+w8,Collect missing documents,inspector,[MISSING],manual,This task requires physical presence and human interaction.,implied,0.5,20.0,0.235,system
+w9,Write and upload inspection report,inspector,inspection system,partial,"This task can be partially automated, but requires human judgment for writing.",implied,0.5,30.0,0.253,
+w10,Assign evaluator,system,[MISSING],full,This task can be fully automated as it involves random assignment.,prior,0.3,2.0,0.306,system
+w11,Check application information and documents,evaluator,[MISSING],partial,This task requires human judgment to assess completeness.,implied,0.5,15.0,0.267,system
+w12,Issue supplementary request,evaluator,[MISSING],partial,This task requires human judgment to determine what is missing.,implied,0.46,5.0,0.273,system
+w13,Start investigation after consent,evaluator,[MISSING],manual,This task requires human judgment and ethical considerations.,implied,0.5,5.0,0.333,system
+w14,Enter company profile,evaluation support team,[MISSING],full,This task involves data entry that can be fully automated.,prior,0.3,10.0,0.222,system
+w15,Confirm company profile,evaluation team,[MISSING],partial,This task requires human judgment to verify the accuracy of the profile.,implied,0.46,5.0,0.174,system
+w16,Pull data from corporate registry,system,[MISSING],full,This task can be fully automated as it involves data retrieval.,prior,0.3,2.0,0.0,system
+w17,Check previous technology grade,evaluator,[MISSING],manual,This task requires human judgment to interpret the grade.,implied,0.46,10.0,0.396,system
+w18,Assess quality of inspection materials,evaluator,[MISSING],partial,This task requires human judgment to evaluate quality.,implied,0.46,10.0,0.34,system
+w19,Request re-inspection,evaluator,[MISSING],partial,This task requires human judgment to determine adequacy.,implied,0.46,5.0,0.273,system
+w20,Carry over company information,evaluator,[MISSING],full,This task can be fully automated as it involves data transfer.,prior,0.3,10.0,0.306,system
+w21,Confirm technology-evaluation target industry,evaluator,[MISSING],partial,This task requires human judgment to confirm the industry.,implied,0.46,5.0,0.5,system
+w22,Search and select industrial-technology classification,evaluator,[MISSING],partial,This task requires human judgment to select the appropriate classification.,implied,0.46,10.0,0.34,system
+w23,Choose new-growth items and climate-technology classification,evaluator,[MISSING],partial,This task requires human judgment to make selections.,implied,0.46,10.0,0.316,system
+w24,Update financial information manually,evaluator,[MISSING],manual,This task requires manual input and cannot be automated.,implied,0.5,15.0,0.234,system
+w25,Write up main business areas and products,evaluator,[MISSING],partial,This task requires human judgment to articulate the business areas.,implied,0.5,15.0,0.365,system
+w26,Pull representative patents from KIPRIS,system,[MISSING],full,This task can be fully automated as it involves data scraping.,prior,0.3,5.0,0.0,system
+w27,Select patents and read published full text,evaluator,[MISSING],partial,This task requires human judgment to interpret the patent details.,implied,0.5,15.0,0.267,system
+w28,Enter supporting basis for patents,evaluator,[MISSING],partial,This task requires human judgment to determine the supporting basis.,implied,0.5,5.0,0.35,system
+w29,Generate draft technology-evaluation opinion,system,GPT,full,This task can be fully automated as it involves generating text based on input.,implied,0.42,10.0,0.425,
+w30,Check on-site technology inspection items,evaluator,[MISSING],partial,This task requires human judgment to evaluate the items.,implied,0.5,10.0,0.333,system
+w31,Produce rule-based score,system,[MISSING],full,This task can be fully automated as it involves a straightforward calculation.,prior,0.3,2.0,0.0,system
+w32,Auto-generate opinions via guidance,system,[MISSING],full,This task can be fully automated as it involves generating text based on rules.,prior,0.3,2.0,0.0,system
+w33,Judge and select inspection items,evaluator,[MISSING],partial,This task requires human judgment to make selections.,implied,0.5,10.0,0.204,system
+w34,Save evaluation results,evaluator,[MISSING],full,This task involves data entry that can be fully automated.,prior,0.3,5.0,0.387,system
+w35,Generate technology opinion,system,GPT,full,This task can be fully automated as it involves generating text based on input.,prior,0.3,7.5,0.333,
+w36,Review and edit technology opinion,evaluator,[MISSING],partial,This task requires human judgment to review and edit the generated text.,implied,0.5,20.0,0.274,system
+w37,Copy-paste market opinion,evaluator,[MISSING],partial,This task involves some automation but requires human judgment for finalization.,implied,0.5,10.0,0.425,system
+w38,Confirm and write summary and detailed opinions,evaluator,[MISSING],partial,This task requires human judgment to articulate the opinions.,implied,0.5,20.0,0.349,system
+w39,Confirm comprehensive evaluation grade,evaluator,[MISSING],partial,This task requires human judgment to determine the grade.,implied,0.5,10.0,0.306,system
+w40,Auto-generate comprehensive opinion,system,GPT,full,This task can be fully automated as it involves generating text based on input.,prior,0.3,2.0,0.0,
+w41,Request review of report,evaluator,[MISSING],partial,This task requires human judgment to determine when to request a review.,implied,0.5,5.0,0.0,system
+w42,Assign reviewer,system,[MISSING],full,This task can be fully automated as it involves random assignment.,prior,0.3,2.0,0.306,system
+w43,Perform error and rule-based checks,system,[MISSING],full,This task can be fully automated as it involves systematic checks.,prior,0.3,2.0,0.0,system
+w44,Check qualitative items,reviewer,[MISSING],partial,This task requires human judgment to evaluate qualitative aspects.,implied,0.5,15.0,0.211,system
+w45,Final approval of report,evaluation team leader,[MISSING],manual,This task requires human judgment and authority for approval.,implied,0.46,5.0,0.35,system
+w46,Dispatch report,evaluation team leader,[MISSING],manual,This task requires human action to send the report.,implied,0.42,5.0,0.233,system

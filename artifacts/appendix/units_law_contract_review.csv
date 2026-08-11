@@ -1,0 +1,8 @@
+﻿id,name,actor,system,auto_grade,auto_rationale
+w1,Intake and logging of counterparty's draft,paralegal,matter system,full,This task involves data entry which can be fully automated by AI systems.
+w2,Clause comparison against standard playbook,associate,[MISSING],partial,"AI can assist in drafting and flagging deviations, but human judgment is needed for final decisions."
+w3,Drafting proposed redlines for non-standard clauses,associate,[MISSING],partial,"AI can generate drafts, but a human must review and finalize the redlines."
+w4,Review of high-risk clauses,partner,[MISSING],manual,This task requires human judgment and expertise that cannot be automated.
+w5,Emailing negotiated changes to counterparty,associate,[MISSING],partial,"AI can assist in drafting emails, but human oversight is necessary for context and final approval."
+w6,Filing final executed copy in document repository,paralegal,[MISSING],full,This task can be fully automated as it involves document management.
+w7,Tracking key dates like renewal and expiry,[MISSING],spreadsheet,manual,This task requires ongoing human attention and cannot be fully automated.

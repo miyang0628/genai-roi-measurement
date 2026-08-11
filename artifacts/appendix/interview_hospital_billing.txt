@@ -1,0 +1,9 @@
+[Interview — Hospital Revenue-Cycle Team]
+Q. How does a claim get processed?
+A. A coder reads the physician's clinical notes and assigns diagnosis and
+procedure codes. Then a biller checks the codes against payer rules and builds
+the claim in the billing system. If required fields are missing, the claim is
+held and a query is sent back to the physician. Once complete, the claim is
+submitted electronically to the insurer. When a denial comes back, a specialist
+reads the denial reason, gathers supporting documents, and writes an appeal
+letter. Posting the payment to the patient ledger is done by hand at month end.
