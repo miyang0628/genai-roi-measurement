@@ -1,0 +1,259 @@
+{
+  "generated_utc": "2026-09-14T05:05:17.821360+00:00",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "matcher_tier": "strong",
+  "tiers": {
+    "weak": {
+      "1_accuracy.grade_agreement": {
+        "mean": 0.6792,
+        "std": 0.0961,
+        "n": 5
+      },
+      "1_accuracy.grade_cohen_kappa": {
+        "mean": 0.543,
+        "std": 0.1195,
+        "n": 5
+      },
+      "1_accuracy.matched_pairs": {
+        "mean": 12.4,
+        "std": 0.4899,
+        "n": 5
+      },
+      "1_accuracy.time_MAE_min": {
+        "mean": 13.22,
+        "std": 0.9537,
+        "n": 5
+      },
+      "1_accuracy.time_MAPE_pct": {
+        "mean": 54.52,
+        "std": 15.5663,
+        "n": 5
+      },
+      "1_accuracy.unmatched_reference": {
+        "mean": 0.6,
+        "std": 0.4899,
+        "n": 5
+      },
+      "2_reliability.mean_cv_minutes": {
+        "mean": 0.196,
+        "std": 0.0482,
+        "n": 5
+      },
+      "2_reliability.median_cv_minutes": {
+        "mean": 0.2014,
+        "std": 0.0388,
+        "n": 5
+      },
+      "2_reliability.pct_nodes_low_cv": {
+        "mean": 70.94,
+        "std": 14.3288,
+        "n": 5
+      },
+      "3_efficiency.annual_saving_usd": {
+        "mean": 119343.0,
+        "std": 42108.252,
+        "n": 5
+      },
+      "3_efficiency.pipeline_llm_cost_usd": {
+        "mean": 0.0462,
+        "std": 0.0309,
+        "n": 5
+      },
+      "3_efficiency.saving_to_cost_ratio": {
+        "mean": 7696719.0,
+        "std": 9951126.5477,
+        "n": 5
+      },
+      "4_transparency.grade_rationale_coverage_pct": {
+        "mean": 100.0,
+        "std": 0.0,
+        "n": 5
+      },
+      "4_transparency.pct_estimates_grounded": {
+        "mean": 57.78,
+        "std": 4.3171,
+        "n": 5
+      },
+      "5_robustness.clarifying_rate_pct": {
+        "mean": 1.78,
+        "std": 1.6278,
+        "n": 5
+      },
+      "5_robustness.missing_system_flagged": {
+        "mean": 36.6,
+        "std": 2.7276,
+        "n": 5
+      }
+    },
+    "mid": {
+      "1_accuracy.grade_agreement": {
+        "mean": 0.6434,
+        "std": 0.0502,
+        "n": 5
+      },
+      "1_accuracy.grade_cohen_kappa": {
+        "mean": 0.4828,
+        "std": 0.0572,
+        "n": 5
+      },
+      "1_accuracy.matched_pairs": {
+        "mean": 12.4,
+        "std": 0.4899,
+        "n": 5
+      },
+      "1_accuracy.time_MAE_min": {
+        "mean": 12.82,
+        "std": 2.6717,
+        "n": 5
+      },
+      "1_accuracy.time_MAPE_pct": {
+        "mean": 54.26,
+        "std": 8.5348,
+        "n": 5
+      },
+      "1_accuracy.unmatched_reference": {
+        "mean": 0.6,
+        "std": 0.4899,
+        "n": 5
+      },
+      "2_reliability.mean_cv_minutes": {
+        "mean": 0.2422,
+        "std": 0.0533,
+        "n": 5
+      },
+      "2_reliability.median_cv_minutes": {
+        "mean": 0.224,
+        "std": 0.0443,
+        "n": 5
+      },
+      "2_reliability.pct_nodes_low_cv": {
+        "mean": 59.84,
+        "std": 9.4527,
+        "n": 5
+      },
+      "3_efficiency.annual_saving_usd": {
+        "mean": 98248.4,
+        "std": 44104.8249,
+        "n": 5
+      },
+      "3_efficiency.pipeline_llm_cost_usd": {
+        "mean": 0.1553,
+        "std": 0.0317,
+        "n": 5
+      },
+      "3_efficiency.saving_to_cost_ratio": {
+        "mean": 671844.4,
+        "std": 295562.0309,
+        "n": 5
+      },
+      "4_transparency.grade_rationale_coverage_pct": {
+        "mean": 100.0,
+        "std": 0.0,
+        "n": 5
+      },
+      "4_transparency.pct_estimates_grounded": {
+        "mean": 50.68,
+        "std": 18.3891,
+        "n": 5
+      },
+      "5_robustness.clarifying_rate_pct": {
+        "mean": 5.34,
+        "std": 9.6178,
+        "n": 5
+      },
+      "5_robustness.missing_system_flagged": {
+        "mean": 39.6,
+        "std": 1.3565,
+        "n": 5
+      }
+    },
+    "strong": {
+      "1_accuracy.grade_agreement": {
+        "mean": 0.6864,
+        "std": 0.0445,
+        "n": 5
+      },
+      "1_accuracy.grade_cohen_kappa": {
+        "mean": 0.548,
+        "std": 0.0568,
+        "n": 5
+      },
+      "1_accuracy.matched_pairs": {
+        "mean": 11.4,
+        "std": 1.2,
+        "n": 5
+      },
+      "1_accuracy.time_MAE_min": {
+        "mean": 14.178,
+        "std": 2.4262,
+        "n": 5
+      },
+      "1_accuracy.time_MAPE_pct": {
+        "mean": 48.1,
+        "std": 14.7572,
+        "n": 5
+      },
+      "1_accuracy.unmatched_reference": {
+        "mean": 1.6,
+        "std": 1.2,
+        "n": 5
+      },
+      "2_reliability.mean_cv_minutes": {
+        "mean": 0.2168,
+        "std": 0.0442,
+        "n": 5
+      },
+      "2_reliability.median_cv_minutes": {
+        "mean": 0.2226,
+        "std": 0.0417,
+        "n": 5
+      },
+      "2_reliability.pct_nodes_low_cv": {
+        "mean": 58.86,
+        "std": 9.896,
+        "n": 5
+      },
+      "3_efficiency.annual_saving_usd": {
+        "mean": 133098.0,
+        "std": 44859.1077,
+        "n": 5
+      },
+      "3_efficiency.pipeline_llm_cost_usd": {
+        "mean": 0.2624,
+        "std": 0.0291,
+        "n": 5
+      },
+      "3_efficiency.saving_to_cost_ratio": {
+        "mean": 506807.6,
+        "std": 152807.7369,
+        "n": 5
+      },
+      "4_transparency.grade_rationale_coverage_pct": {
+        "mean": 100.0,
+        "std": 0.0,
+        "n": 5
+      },
+      "4_transparency.pct_estimates_grounded": {
+        "mean": 56.46,
+        "std": 5.5784,
+        "n": 5
+      },
+      "5_robustness.clarifying_rate_pct": {
+        "mean": 2.84,
+        "std": 2.5508,
+        "n": 5
+      },
+      "5_robustness.missing_system_flagged": {
+        "mean": 34.4,
+        "std": 5.1614,
+        "n": 5
+      }
+    }
+  }
+}
