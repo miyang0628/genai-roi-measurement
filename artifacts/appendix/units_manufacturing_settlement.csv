@@ -1,8 +1,0 @@
-﻿id,name,actor,system,auto_grade,auto_rationale
-w1,Pull production volumes and material costs,Analyst,"MES, ERP",partial,AI can assist in data extraction but human oversight is needed for context and accuracy.
-w2,Reconcile production volumes and material costs,Analyst,[MISSING],partial,"AI can help identify discrepancies, but human judgment is required to investigate variances."
-w3,Allocate overhead,Analyst,[MISSING],full,Overhead allocation by a fixed rule can be fully automated.
-w4,Prepare cost-of-goods journal entry,Analyst,[MISSING],partial,"AI can draft the journal entry, but a human must review for accuracy and compliance."
-w5,Review and approve journal entry,Manager,[MISSING],manual,This process requires human judgment and approval.
-w6,Generate closing report,Analyst,[MISSING],partial,"AI can assist in generating reports from templates, but human input is needed for finalization."
-w7,Distribute closing report,Analyst,Email,full,The distribution of reports via email can be fully automated.

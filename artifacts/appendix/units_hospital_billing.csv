@@ -1,7 +1,0 @@
-﻿id,name,actor,system,auto_grade,auto_rationale
-w1,Code assignment from clinical notes,Coder,[MISSING],partial,"AI can assist in drafting codes based on clinical notes, but human expertise is needed for final validation."
-w2,Claim building,Biller,Billing system,full,The process of building a claim can be fully automated using AI systems that integrate with billing software.
-w3,Query generation for missing fields,Biller,[MISSING],partial,"AI can generate queries for missing information, but human intervention is needed to send them."
-w4,Claim submission,Biller,Billing system,full,Claim submission can be fully automated through electronic systems.
-w5,Denial analysis and appeal letter writing,Specialist,[MISSING],partial,"AI can assist in drafting appeal letters based on denial reasons, but human judgment is required for context."
-w6,Payment posting to patient ledger,Unknown,[MISSING],manual,This task requires manual entry and cannot be automated due to the need for physical handling.

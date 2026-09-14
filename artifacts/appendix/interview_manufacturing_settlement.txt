@@ -1,8 +1,0 @@
-[Interview — Manufacturing Finance, Monthly Settlement]
-Q. How does monthly settlement work?
-A. An analyst pulls production volumes from the MES and material costs from the
-ERP. They reconcile the two against work orders, and where quantities do not
-match they investigate the variance with the plant. Overhead is allocated by a
-fixed rule. The analyst prepares the cost-of-goods journal entry and a manager
-reviews and approves it. The closing report is generated from a template and
-distributed to the plant controllers by email.
