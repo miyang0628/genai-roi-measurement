@@ -1,0 +1,6 @@
+﻿axis,key_metric,value
+1 Accuracy,grade kappa / time MAPE,"kappa=0.454, MAPE=54.4%"
+2 Reliability,mean CV (minutes),0.182
+3 Efficiency,saving : cost ratio,"394,791:1"
+4 Transparency,rationale coverage / grounded,100.0% / 45.8%
+5 Robustness,clarifying-question rate,6.2%

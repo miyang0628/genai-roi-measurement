@@ -1,0 +1,691 @@
+{
+  "agent": "agent3_roi_computation",
+  "cost_model": {
+    "hourly_wage_usd": 35.0,
+    "capex_usd": 60000.0,
+    "opex_usd_per_year": 12000.0
+  },
+  "baseline": {
+    "asis_min_month": 38100.0,
+    "tobe_min_month": 20920.0,
+    "saved_hours_year": 3436.0,
+    "annual_saving_usd": 120260.0,
+    "net_annual_usd": 108260.0,
+    "roi_pct": 180.43333333333334,
+    "payback_years": 0.5542213190467393,
+    "effort_reduction_pct": 45.09186351706037
+  },
+  "sensitivity_sweep": {
+    "cases_per_month": [
+      5,
+      10,
+      20,
+      40,
+      60,
+      100
+    ],
+    "partial_retain": [
+      0.1,
+      0.3,
+      0.5
+    ],
+    "hourly_wage_usd": [
+      20,
+      35,
+      50,
+      80
+    ]
+  },
+  "sensitivity_grid": [
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 5300.0,
+      "roi_pct": -11.2,
+      "payback_years": null,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 9275.0,
+      "roi_pct": -4.5,
+      "payback_years": null,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 13250.0,
+      "roi_pct": 2.1,
+      "payback_years": 48.0,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 21200.0,
+      "roi_pct": 15.3,
+      "payback_years": 6.52,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 4220.0,
+      "roi_pct": -13.0,
+      "payback_years": null,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 7385.0,
+      "roi_pct": -7.7,
+      "payback_years": null,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 10550.0,
+      "roi_pct": -2.4,
+      "payback_years": null,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 16880.0,
+      "roi_pct": 8.1,
+      "payback_years": 12.3,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 3140.0,
+      "roi_pct": -14.8,
+      "payback_years": null,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 5495.0,
+      "roi_pct": -10.8,
+      "payback_years": null,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 7850.0,
+      "roi_pct": -6.9,
+      "payback_years": null,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 5,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 12560.0,
+      "roi_pct": 0.9,
+      "payback_years": 107.14,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 10600.0,
+      "roi_pct": -2.3,
+      "payback_years": null,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 18550.0,
+      "roi_pct": 10.9,
+      "payback_years": 9.16,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 26500.0,
+      "roi_pct": 24.2,
+      "payback_years": 4.14,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 42400.0,
+      "roi_pct": 50.7,
+      "payback_years": 1.97,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 8440.0,
+      "roi_pct": -5.9,
+      "payback_years": null,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 14770.0,
+      "roi_pct": 4.6,
+      "payback_years": 21.66,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 21100.0,
+      "roi_pct": 15.2,
+      "payback_years": 6.59,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 33760.0,
+      "roi_pct": 36.3,
+      "payback_years": 2.76,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 6280.0,
+      "roi_pct": -9.5,
+      "payback_years": null,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 10990.0,
+      "roi_pct": -1.7,
+      "payback_years": null,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 15700.0,
+      "roi_pct": 6.2,
+      "payback_years": 16.22,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 10,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 25120.0,
+      "roi_pct": 21.9,
+      "payback_years": 4.57,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 21200.0,
+      "roi_pct": 15.3,
+      "payback_years": 6.52,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 37100.0,
+      "roi_pct": 41.8,
+      "payback_years": 2.39,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 53000.0,
+      "roi_pct": 68.3,
+      "payback_years": 1.46,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 84800.0,
+      "roi_pct": 121.3,
+      "payback_years": 0.82,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 16880.0,
+      "roi_pct": 8.1,
+      "payback_years": 12.3,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 29540.0,
+      "roi_pct": 29.2,
+      "payback_years": 3.42,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 42200.0,
+      "roi_pct": 50.3,
+      "payback_years": 1.99,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 67520.0,
+      "roi_pct": 92.5,
+      "payback_years": 1.08,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 12560.0,
+      "roi_pct": 0.9,
+      "payback_years": 107.14,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 21980.0,
+      "roi_pct": 16.6,
+      "payback_years": 6.01,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 31400.0,
+      "roi_pct": 32.3,
+      "payback_years": 3.09,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 20,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 50240.0,
+      "roi_pct": 63.7,
+      "payback_years": 1.57,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 42400.0,
+      "roi_pct": 50.7,
+      "payback_years": 1.97,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 74200.0,
+      "roi_pct": 103.7,
+      "payback_years": 0.96,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 106000.0,
+      "roi_pct": 156.7,
+      "payback_years": 0.64,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 169600.0,
+      "roi_pct": 262.7,
+      "payback_years": 0.38,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 33760.0,
+      "roi_pct": 36.3,
+      "payback_years": 2.76,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 59080.0,
+      "roi_pct": 78.5,
+      "payback_years": 1.27,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 84400.0,
+      "roi_pct": 120.7,
+      "payback_years": 0.83,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 135040.0,
+      "roi_pct": 205.1,
+      "payback_years": 0.49,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 25120.0,
+      "roi_pct": 21.9,
+      "payback_years": 4.57,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 43960.0,
+      "roi_pct": 53.3,
+      "payback_years": 1.88,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 62800.0,
+      "roi_pct": 84.7,
+      "payback_years": 1.18,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 40,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 100480.0,
+      "roi_pct": 147.5,
+      "payback_years": 0.68,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 63600.0,
+      "roi_pct": 86.0,
+      "payback_years": 1.16,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 111300.0,
+      "roi_pct": 165.5,
+      "payback_years": 0.6,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 159000.0,
+      "roi_pct": 245.0,
+      "payback_years": 0.41,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 254400.0,
+      "roi_pct": 404.0,
+      "payback_years": 0.25,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 50640.0,
+      "roi_pct": 64.4,
+      "payback_years": 1.55,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 88620.0,
+      "roi_pct": 127.7,
+      "payback_years": 0.78,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 126600.0,
+      "roi_pct": 191.0,
+      "payback_years": 0.52,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 202560.0,
+      "roi_pct": 317.6,
+      "payback_years": 0.31,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 37680.0,
+      "roi_pct": 42.8,
+      "payback_years": 2.34,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 65940.0,
+      "roi_pct": 89.9,
+      "payback_years": 1.11,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 94200.0,
+      "roi_pct": 137.0,
+      "payback_years": 0.73,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 60,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 150720.0,
+      "roi_pct": 231.2,
+      "payback_years": 0.43,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 106000.0,
+      "roi_pct": 156.7,
+      "payback_years": 0.64,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 185500.0,
+      "roi_pct": 289.2,
+      "payback_years": 0.35,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 265000.0,
+      "roi_pct": 421.7,
+      "payback_years": 0.24,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.1,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 424000.0,
+      "roi_pct": 686.7,
+      "payback_years": 0.15,
+      "effort_reduction_pct": 42.6
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 84400.0,
+      "roi_pct": 120.7,
+      "payback_years": 0.83,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 147700.0,
+      "roi_pct": 226.2,
+      "payback_years": 0.44,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 211000.0,
+      "roi_pct": 331.7,
+      "payback_years": 0.3,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.3,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 337600.0,
+      "roi_pct": 542.7,
+      "payback_years": 0.18,
+      "effort_reduction_pct": 33.9
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 20,
+      "annual_saving_usd": 62800.0,
+      "roi_pct": 84.7,
+      "payback_years": 1.18,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 35,
+      "annual_saving_usd": 109900.0,
+      "roi_pct": 163.2,
+      "payback_years": 0.61,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 50,
+      "annual_saving_usd": 157000.0,
+      "roi_pct": 241.7,
+      "payback_years": 0.41,
+      "effort_reduction_pct": 25.2
+    },
+    {
+      "cases_per_month": 100,
+      "partial_retain": 0.5,
+      "hourly_wage_usd": 80,
+      "annual_saving_usd": 251200.0,
+      "roi_pct": 398.7,
+      "payback_years": 0.25,
+      "effort_reduction_pct": 25.2
+    }
+  ],
+  "executive_summary": "The baseline ROI is 180.0% with a payback period of 0.55 years, based on an effort reduction of 45.1% and annual savings of $120,260 from 3,436 saved hours. The sensitivity analysis indicates a potential ROI range from -15.0% to 687.0%, with a break-even point at 10 cases per month. It is important to note that all figures derive from prior/implied time estimates; the interview stated no explicit durations or volumes.",
+  "provenance_caveat": "All figures derive from prior/implied time estimates; the interview stated no explicit durations or volumes."
+}

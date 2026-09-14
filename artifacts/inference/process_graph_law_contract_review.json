@@ -1,0 +1,278 @@
+{
+  "agent": "agent1_5_process_graph",
+  "params": {
+    "partial_retain": 0.3,
+    "ai_lane": "AI Agent"
+  },
+  "lane_order": [
+    "paralegal",
+    "associate",
+    "partner",
+    "[MISSING]"
+  ],
+  "as_is": {
+    "nodes": [
+      {
+        "id": "w1",
+        "name": "Intake and logging of counterparty's draft",
+        "lane": "paralegal",
+        "type": "start",
+        "grade": "full",
+        "rationale": "This task involves data entry which can be fully automated by AI systems."
+      },
+      {
+        "id": "w2",
+        "name": "Clause comparison against standard playbook",
+        "lane": "associate",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can assist in drafting and flagging deviations, but human judgment is needed for final decisions."
+      },
+      {
+        "id": "w3",
+        "name": "Drafting proposed redlines for non-standard clauses",
+        "lane": "associate",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can generate drafts, but a human must review and finalize the redlines."
+      },
+      {
+        "id": "w4",
+        "name": "Review of high-risk clauses",
+        "lane": "partner",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires human judgment and expertise that cannot be automated."
+      },
+      {
+        "id": "w5",
+        "name": "Emailing negotiated changes to counterparty",
+        "lane": "associate",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can assist in drafting emails, but human oversight is necessary for context and final approval."
+      },
+      {
+        "id": "w6",
+        "name": "Filing final executed copy in document repository",
+        "lane": "paralegal",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves document management."
+      },
+      {
+        "id": "w7",
+        "name": "Tracking key dates like renewal and expiry",
+        "lane": "[MISSING]",
+        "type": "end",
+        "grade": "manual",
+        "rationale": "This task requires ongoing human attention and cannot be fully automated."
+      }
+    ],
+    "edges": [
+      {
+        "from": "w1",
+        "to": "w2",
+        "label": ""
+      },
+      {
+        "from": "w2",
+        "to": "w3",
+        "label": ""
+      },
+      {
+        "from": "w3",
+        "to": "w4",
+        "label": ""
+      },
+      {
+        "from": "w4",
+        "to": "w5",
+        "label": ""
+      },
+      {
+        "from": "w5",
+        "to": "w6",
+        "label": ""
+      },
+      {
+        "from": "w6",
+        "to": "w7",
+        "label": ""
+      }
+    ]
+  },
+  "to_be": {
+    "nodes": [
+      {
+        "src_id": "w1",
+        "name": "Intake and logging of counterparty's draft",
+        "type": "start",
+        "grade": "full",
+        "rationale": "This task involves data entry which can be fully automated by AI systems.",
+        "id": "w1_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w2",
+        "name": "Clause comparison against standard playbook (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can assist in drafting and flagging deviations, but human judgment is needed for final decisions.",
+        "id": "w2_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w2",
+        "name": "Clause comparison against standard playbook (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can assist in drafting and flagging deviations, but human judgment is needed for final decisions.",
+        "id": "w2_review",
+        "lane": "associate",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w3",
+        "name": "Drafting proposed redlines for non-standard clauses (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can generate drafts, but a human must review and finalize the redlines.",
+        "id": "w3_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w3",
+        "name": "Drafting proposed redlines for non-standard clauses (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can generate drafts, but a human must review and finalize the redlines.",
+        "id": "w3_review",
+        "lane": "associate",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w4",
+        "name": "Review of high-risk clauses",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This task requires human judgment and expertise that cannot be automated.",
+        "id": "w4_m",
+        "lane": "partner",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      },
+      {
+        "src_id": "w5",
+        "name": "Emailing negotiated changes to counterparty (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can assist in drafting emails, but human oversight is necessary for context and final approval.",
+        "id": "w5_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w5",
+        "name": "Emailing negotiated changes to counterparty (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can assist in drafting emails, but human oversight is necessary for context and final approval.",
+        "id": "w5_review",
+        "lane": "associate",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w6",
+        "name": "Filing final executed copy in document repository",
+        "type": "task",
+        "grade": "full",
+        "rationale": "This task can be fully automated as it involves document management.",
+        "id": "w6_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w7",
+        "name": "Tracking key dates like renewal and expiry",
+        "type": "end",
+        "grade": "manual",
+        "rationale": "This task requires ongoing human attention and cannot be fully automated.",
+        "id": "w7_m",
+        "lane": "[MISSING]",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      }
+    ],
+    "edges": [
+      {
+        "from": "w1_ai",
+        "to": "w2_ai",
+        "label": ""
+      },
+      {
+        "from": "w2_review",
+        "to": "w3_ai",
+        "label": ""
+      },
+      {
+        "from": "w3_review",
+        "to": "w4_m",
+        "label": ""
+      },
+      {
+        "from": "w4_m",
+        "to": "w5_ai",
+        "label": ""
+      },
+      {
+        "from": "w5_review",
+        "to": "w6_ai",
+        "label": ""
+      },
+      {
+        "from": "w6_ai",
+        "to": "w7_m",
+        "label": ""
+      },
+      {
+        "from": "w2_ai",
+        "to": "w2_review",
+        "label": ""
+      },
+      {
+        "from": "w3_ai",
+        "to": "w3_review",
+        "label": ""
+      },
+      {
+        "from": "w5_ai",
+        "to": "w5_review",
+        "label": ""
+      }
+    ]
+  },
+  "counts": {
+    "asis_total": 7,
+    "asis_human": 7,
+    "tobe_total": 10,
+    "tobe_human": 5,
+    "node_count_reduction_pct": 28.6,
+    "fully_eliminated_human": 2,
+    "partially_reduced_human": 3,
+    "effort_reduction_pct": null,
+    "asis_human_minutes_per_month": null,
+    "tobe_human_minutes_per_month": null
+  }
+}

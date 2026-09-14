@@ -1,0 +1,292 @@
+{
+  "agent": "agent1_5_process_graph",
+  "params": {
+    "partial_retain": 0.3,
+    "ai_lane": "AI Agent"
+  },
+  "lane_order": [
+    "Analyst",
+    "Manager"
+  ],
+  "as_is": {
+    "nodes": [
+      {
+        "id": "w1",
+        "name": "Pull production volumes and material costs",
+        "lane": "Analyst",
+        "type": "start",
+        "grade": "partial",
+        "rationale": "AI can assist in data extraction but human oversight is needed for context and accuracy."
+      },
+      {
+        "id": "w2",
+        "name": "Reconcile production volumes and material costs",
+        "lane": "Analyst",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can help identify discrepancies, but human judgment is required to investigate variances."
+      },
+      {
+        "id": "w3",
+        "name": "Allocate overhead",
+        "lane": "Analyst",
+        "type": "task",
+        "grade": "full",
+        "rationale": "Overhead allocation by a fixed rule can be fully automated."
+      },
+      {
+        "id": "w4",
+        "name": "Prepare cost-of-goods journal entry",
+        "lane": "Analyst",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can draft the journal entry, but a human must review for accuracy and compliance."
+      },
+      {
+        "id": "w5",
+        "name": "Review and approve journal entry",
+        "lane": "Manager",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This process requires human judgment and approval."
+      },
+      {
+        "id": "w6",
+        "name": "Generate closing report",
+        "lane": "Analyst",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can assist in generating reports from templates, but human input is needed for finalization."
+      },
+      {
+        "id": "w7",
+        "name": "Distribute closing report",
+        "lane": "Analyst",
+        "type": "end",
+        "grade": "full",
+        "rationale": "The distribution of reports via email can be fully automated."
+      }
+    ],
+    "edges": [
+      {
+        "from": "w1",
+        "to": "w2",
+        "label": ""
+      },
+      {
+        "from": "w2",
+        "to": "w3",
+        "label": ""
+      },
+      {
+        "from": "w3",
+        "to": "w4",
+        "label": ""
+      },
+      {
+        "from": "w4",
+        "to": "w5",
+        "label": ""
+      },
+      {
+        "from": "w5",
+        "to": "w6",
+        "label": ""
+      },
+      {
+        "from": "w6",
+        "to": "w7",
+        "label": ""
+      }
+    ]
+  },
+  "to_be": {
+    "nodes": [
+      {
+        "src_id": "w1",
+        "name": "Pull production volumes and material costs (AI draft)",
+        "type": "start",
+        "grade": "partial",
+        "rationale": "AI can assist in data extraction but human oversight is needed for context and accuracy.",
+        "id": "w1_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w1",
+        "name": "Pull production volumes and material costs (human review)",
+        "type": "start",
+        "grade": "partial",
+        "rationale": "AI can assist in data extraction but human oversight is needed for context and accuracy.",
+        "id": "w1_review",
+        "lane": "Analyst",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w2",
+        "name": "Reconcile production volumes and material costs (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can help identify discrepancies, but human judgment is required to investigate variances.",
+        "id": "w2_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w2",
+        "name": "Reconcile production volumes and material costs (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can help identify discrepancies, but human judgment is required to investigate variances.",
+        "id": "w2_review",
+        "lane": "Analyst",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w3",
+        "name": "Allocate overhead",
+        "type": "task",
+        "grade": "full",
+        "rationale": "Overhead allocation by a fixed rule can be fully automated.",
+        "id": "w3_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w4",
+        "name": "Prepare cost-of-goods journal entry (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can draft the journal entry, but a human must review for accuracy and compliance.",
+        "id": "w4_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w4",
+        "name": "Prepare cost-of-goods journal entry (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can draft the journal entry, but a human must review for accuracy and compliance.",
+        "id": "w4_review",
+        "lane": "Analyst",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w5",
+        "name": "Review and approve journal entry",
+        "type": "task",
+        "grade": "manual",
+        "rationale": "This process requires human judgment and approval.",
+        "id": "w5_m",
+        "lane": "Manager",
+        "human_effort_factor": 1.0,
+        "role": "human"
+      },
+      {
+        "src_id": "w6",
+        "name": "Generate closing report (AI draft)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can assist in generating reports from templates, but human input is needed for finalization.",
+        "id": "w6_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      },
+      {
+        "src_id": "w6",
+        "name": "Generate closing report (human review)",
+        "type": "task",
+        "grade": "partial",
+        "rationale": "AI can assist in generating reports from templates, but human input is needed for finalization.",
+        "id": "w6_review",
+        "lane": "Analyst",
+        "human_effort_factor": 0.3,
+        "role": "human"
+      },
+      {
+        "src_id": "w7",
+        "name": "Distribute closing report",
+        "type": "end",
+        "grade": "full",
+        "rationale": "The distribution of reports via email can be fully automated.",
+        "id": "w7_ai",
+        "lane": "AI Agent",
+        "human_effort_factor": 0.0,
+        "role": "ai"
+      }
+    ],
+    "edges": [
+      {
+        "from": "w1_review",
+        "to": "w2_ai",
+        "label": ""
+      },
+      {
+        "from": "w2_review",
+        "to": "w3_ai",
+        "label": ""
+      },
+      {
+        "from": "w3_ai",
+        "to": "w4_ai",
+        "label": ""
+      },
+      {
+        "from": "w4_review",
+        "to": "w5_m",
+        "label": ""
+      },
+      {
+        "from": "w5_m",
+        "to": "w6_ai",
+        "label": ""
+      },
+      {
+        "from": "w6_review",
+        "to": "w7_ai",
+        "label": ""
+      },
+      {
+        "from": "w1_ai",
+        "to": "w1_review",
+        "label": ""
+      },
+      {
+        "from": "w2_ai",
+        "to": "w2_review",
+        "label": ""
+      },
+      {
+        "from": "w4_ai",
+        "to": "w4_review",
+        "label": ""
+      },
+      {
+        "from": "w6_ai",
+        "to": "w6_review",
+        "label": ""
+      }
+    ]
+  },
+  "counts": {
+    "asis_total": 7,
+    "asis_human": 7,
+    "tobe_total": 11,
+    "tobe_human": 5,
+    "node_count_reduction_pct": 28.6,
+    "fully_eliminated_human": 2,
+    "partially_reduced_human": 4,
+    "effort_reduction_pct": null,
+    "asis_human_minutes_per_month": null,
+    "tobe_human_minutes_per_month": null
+  }
+}

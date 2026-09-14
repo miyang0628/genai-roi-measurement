@@ -1,0 +1,49 @@
+{
+  "artifact": "five_axis_validation_report",
+  "stance": "protocol demonstrated on one illustrative case; thresholds are left as future standardization work.",
+  "axes": {
+    "1_accuracy": {
+      "enabled": true,
+      "matched_pairs": 13,
+      "unmatched_reference": 0,
+      "grade_agreement": 0.615,
+      "grade_cohen_kappa": 0.454,
+      "time_MAE_min": 10.85,
+      "time_MAPE_pct": 54.4,
+      "n_time_pairs": 13
+    },
+    "2_reliability": {
+      "n_rollouts": 5,
+      "mean_cv_minutes": 0.182,
+      "median_cv_minutes": 0.2,
+      "pct_nodes_low_cv": 64.6,
+      "pct_nodes_full_sampled": 81.2
+    },
+    "3_efficiency": {
+      "annual_saving_usd": 120260.0,
+      "pipeline_llm_cost_usd": 0.304617,
+      "pipeline_llm_calls": 127,
+      "cost_source": "measured (cost_ledger.json across all notebooks)",
+      "per_stage_cost": {
+        "01_agent1": 0.304617
+      },
+      "saving_to_cost_ratio": 394791.0,
+      "framing": "A one-time analysis costing cents produces an estimated recurring annual labor saving in the five figures; the axis measures order-of-magnitude leverage, not a precise multiple."
+    },
+    "4_transparency": {
+      "grade_rationale_coverage_pct": 100.0,
+      "time_source_distribution": {
+        "prior": 26,
+        "implied": 22
+      },
+      "pct_estimates_grounded": 45.8
+    },
+    "5_robustness": {
+      "clarifying_questions": 3,
+      "clarifying_rate_pct": 6.2,
+      "missing_actor_flagged": 0,
+      "missing_system_flagged": 41,
+      "note": "The interview stated no explicit times; the pipeline surfaced low-confidence high-impact nodes as questions instead of silently trusting weak estimates."
+    }
+  }
+}

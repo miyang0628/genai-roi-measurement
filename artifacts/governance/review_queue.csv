@@ -1,0 +1,4 @@
+﻿unit_id,task,reason,question_for_expert,status
+w2,Check applicant company's basic information,low confidence (0.38) but high effort (1000 min/mo),"For 'Check applicant company's basic information', what is the actual time per case and the monthly volume? (current estimate is a prior-based guess)",PENDING_REVIEW
+w14,Enter company profile,low confidence (0.3) but high effort (1000 min/mo),"For 'Enter company profile', what is the actual time per case and the monthly volume? (current estimate is a prior-based guess)",PENDING_REVIEW
+w20,Carry over company information,low confidence (0.3) but high effort (1000 min/mo),"For 'Carry over company information', what is the actual time per case and the monthly volume? (current estimate is a prior-based guess)",PENDING_REVIEW
